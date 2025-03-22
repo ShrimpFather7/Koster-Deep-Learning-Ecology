@@ -33,7 +33,7 @@ Originally used for data processing in:
 - `chp_2_depth_df.csv` – A .csv-file including the depth read, frame number, and name of the file which the frame was taken from.
 
 ## **License**
-- All scripts and data are available under the [CC BY license](https://creativecommons.org/share-your-work/cclicenses/), please cite any use or derivatives of this work.
+- All scripts and data are available under the [MIT license](https://mit-license.org/), please cite any use or derivatives of this work.
 
 ## **Notes**
 ### <a id="note-1"></a>Note 1
