@@ -19,6 +19,8 @@ This script was originally used for data processing in:
 
 - `chp_4_traits_df.csv` – A .csv-file with all investigated taxa and their assigned traits as assigned by Nilsson et al. (2025)
 
+- `stats_output.txt` – Example output from Nilsson et al. (2025), copied from the console to a .txt file.
+
 ## **Dependencies**
 - dplyr
 
