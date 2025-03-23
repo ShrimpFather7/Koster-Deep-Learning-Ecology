@@ -56,4 +56,4 @@ Questions, bugs, and suggestions can be submitted via email to christian.nilsson
 Some taxa investigated by Nilsson et al. (2025) may have consisted of several species. Therefore, species of these taxa that have been suggested by the Swedish biodiversity portal [Artdatabanken](https://artfakta.se/ "Artfakta – the facts part about species") to reside at the study site of Nilsson et al. (2025) have been included in the occurrence downloads.
 
 ### <a id="note-2"></a>Note 2
-As one filtering step is random, output may not be identical to `chp_3_publication_temp_occurrences.csv`. Therefore, this file has been included for reproducibility purposes.
+As one filtering step is randomized, output may not be identical to `chp_3_publication_temp_occurrences.csv`. Therefore, this file has been included for reproducibility purposes.
