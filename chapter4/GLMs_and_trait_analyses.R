@@ -12,7 +12,7 @@ library(dplyr)
 
 
 # Read the "Koster Historical Biodiversity Assessment" df
-my_data_path <- "C:/Users/chris/OneDrive/Skrivbord/Depth_Learning_Submission/Depth learning code/4 - GLMs and trait analyses/koster_historical_biodiversity_assessment_occurrence.txt"
+my_data_path <- "Path/to/koster_historical_biodiversity_assessment_occurrence.txt"
 my_data <- read.csv(my_data_path, sep = "\t")
 
 # Use this function to assign each abundance score (grouped by depth and transect) with 
@@ -63,7 +63,7 @@ taxonmodel_results
 # Traits part!
 
 # Read the traits df
-traits<- read.csv("C:/Users/chris/OneDrive/Skrivbord/Depth_Learning_Submission/Depth learning code/4 - GLMs and trait analyses/chp_4_traits_df.csv")
+traits<- read.csv("Path/to/chp_4_traits_df.csv")
 
 # Add each trait as a column to the original occurrence dataset, joining by taxon name.
 my_data <- my_data %>%
