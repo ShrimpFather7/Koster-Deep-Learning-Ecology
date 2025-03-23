@@ -1,36 +1,44 @@
-# Chapter 2: Annotations to GBIF data  
+# Chapter 3: Depth exploration and temp assignments  
 
-This chapter contains the R script and data used for assigning depth values to annotations made by running a YOLOv8 model on footage through [SUBSIM Notebook "Evaluate machine learning models"](https://github.com/ocean-data-factory-sweden/kso/blob/dev/notebooks/classify/Upload_subjects_to_Zooniverse.ipynb "Evaluate models (GitHub)"). Afterward it collects average and max count of annotations per class per depth and reformats data according to [Darwin Core terminology](https://dwc.tdwg.org/list/ "Darwin Core List of Terms") for publication to [The Global Biodiversity Information Facility](https://www.gbif.org/ "GBIF.org").
+This chapter contains the R script and data used for exploration of depth ranges of investigated taxa from output data from [Chapter 2](https://github.com/ShrimpFather7/Koster_Deep-Learning_Ecology/tree/main/chapter2 "Chapter 2 – Annotations to GBIF data") and comparing them to a GBIF occurrence download. Afterwards, occurrences can be intersected with temperature values from [Bio-ORACLE](https://doi.org/10.1111/geb.13813 "Bio-ORACLE v3.0 original publication") and filtered to estimate median temperature and temperature ranges of investigated taxa.
 
 ## **Citation**
 Please use the following citation for use of any data or code provided in this repository:
 - Zenodo blablabla Nilsson 2025
 
-Originally used for data processing in:
+Example dataset is taken from [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment"). For any use of this data, please use the following citation:
+- Nilsson CL, Anton V, Burman E, Germishuys J, Obst M. (2025). Koster historical biodiversity assessment. Version 1.7. Wildlife.ai. Occurrence dataset. https://ipt.gbif.org.nz/resource?r=koster_historical_assessment&v=1.7 https://doi.org/10.15468/rzhmef.
+
+This script was originally used for data processing in:
 - Nilsson et al. 2025
 
 ## **Contents**  
-- `Annotations_to_GBIF.R` – R-script that assigns depth values to annotations, collects annotation stats per depth, and formats data for GBIF publication.
-- `chp_2_annotations_transect_1.zip` .zip file containing example raw annotations data from YOLOv8 application to footage using SUBSIM.
-- `chp_2_depth_df.csv` – A .csv-file including the depth values, corresponding frame numbers, and name of the files from which each frame was taken. [See note 1](#note-1)
-
+- `Depth_comparison_and_temp_assignments.R` – R-script that extracts depth ranges from investigated taxa in the original dataset and a GBIF occurrence download, and assigns investigated taxa with a median temperature based on Bio-ORACLE data and GBIF occurrence data.
+- `koster_historical_biodiversity_assessment_occurrence.txt` – Tab-separated .txt file with Darwin Core formatted abundance data sorted by taxon and depth, utilized in data analyses by Nilsson et al. (2025).
+- `chp_3_GBIF_Swedata.csv` – The same .csv-file with [GBIF occurrences](https://doi.org/10.15468/dl.rcne77 "GBIF Occurrence download (Sweden)") utilized by Nilsson et al. (2025) for comparison of their modeled results with depth distributions of the same species they investigated throughout Sweden. [See note 1](#note-1) 
+- `chp_3_GBIF_Globaldata.csv` – The same .csv-file with [GBIF occurrences](https://doi.org/10.15468/dl.azec6t "GBIF Occurrence download (Global)") utilized by Nilsson et al. (2025) for intersection of temperatures to worldwide occurrences between the years 2000-2019 of the same species they investigated. [See note 1](#note-1)
+- `chp_3_publication_temp_occurrences.csv` – The .csv-file utilized by Nilsson et al. (2025) with GBIF occurrences intersected with Bio-ORACLE temperature values, filtered according to criteria in `Depth_comparison_and_temp_assignments.R`.[See note 2](#note-2)
 
 ## **Dependencies**
-- zoo
 - dplyr
-- tidyr
-- ggplot2
+- terra
+- raster
+- biooracler
+- geosphere
 
 ## **How to Use**  
-1. Load the script into R.
-2. Follow instructions until the desired level of data is achieved, i.e:
-    - Expanded raw data containing the number of annotations (including absences) of each class per frame).
-    - Summarized data of max/mean number of annotations of each class per depth unit, using Darwin Core terminology formatted for GBIF publication.
-4. When applying Darwin Core terminology, make sure to check the [term list](https://dwc.tdwg.org/list/ "Darwin Core List of Terms") and use the correct format for values (examples provided in code).
+1. Load the script into RStudio.
+2. Follow instructions to:
+    - Extract depth ranges of taxa from data formatted as [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment") and from a GBIF occurrence download.
+    - Assign temperature values to GBIF occurrences and filter to estimate taxa's temperature ranges.
+    - Do both of the above :)
 
 ## **Output**
-- `rawdata.csv` – Expanded raw data containing the number of annotations (including absences) of each class per frame).
-- `test_gbif.csv` – Summarized data of max/mean number of annotations of each class per depth unit, using Darwin Core terminology formatted. This data will be formatted in the same way as [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment") data which is used in chapters 3-4 (but in tab-separated .txt format).
+- `my_depth_ranges.csv` – Depth ranges of investigated taxa from data formatted as [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment").
+- `gbif_depth_ranges.csv` – Depth ranges of investigated taxa from a GBIF occurrence download.
+- `intersected_temps.csv` – GBIF occurrences intersected with temperature values from Bio-ORACLE.
+- `filtered_temps.csv` – Filtered occurrences intersected with temperature (equivalent to `chp_3_publication_temp_occurrences.csv`)
+- `central_ranges.csv` – Central 68% of temperature values and median temperatures assigned to all investigated taxa (from `filtered_temps.csv`).
 
 ## **Contact**
 Questions, bugs, and suggestions can be submitted via email to christian.nilsson7@outlook.com.
@@ -40,4 +48,7 @@ Questions, bugs, and suggestions can be submitted via email to christian.nilsson
 
 ## **Notes**
 ### <a id="note-1"></a>Note 1
-`depth_df` (generated in [Chapter 1](https://github.com/ShrimpFather7/Koster_Deep-Learning_Ecology/tree/main/chapter1 "Chapter 1 – Depth Extraction")) and `annotations` must stem from the same video files with the same file names.
+Some taxa investigated by Nilsson et al. (2025) may have consisted of several species. Therefore, species of these taxa that have been suggested by the Swedish biodiversity portal [Artdatabanken](https://artfakta.se/"Artfakta, the facts part about species") to reside at the study site of Nilsson et al. (2025) have been included in the occurrence downloads.
+
+### <a id="note-2"></a>Note 2
+As one filtering step is random, output may not be identical to `chp_3_publication_temp_occurrences.csv`. Therefore, this file has been included for reproducibility purposes.
