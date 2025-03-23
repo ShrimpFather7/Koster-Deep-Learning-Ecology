@@ -1,6 +1,6 @@
 # Chapter 3: Depth exploration and temp assignments  
 
-This chapter contains the R script and data used for exploration of depth ranges of investigated taxa from output data from [Chapter 2](https://github.com/ShrimpFather7/Koster_Deep-Learning_Ecology/tree/main/chapter2 "Chapter 2 – Annotations to GBIF data") and comparing them to a GBIF occurrence download. Afterwards, occurrences can be intersected with temperature values from [Bio-ORACLE](https://doi.org/10.1111/geb.13813 "Bio-ORACLE v3.0 original publication") and filtered to estimate median temperature and temperature ranges of investigated taxa.
+This chapter contains the R script and data used for exploration of depth ranges of taxa investigated by Nilsson et al. (2025) using output data from [Chapter 2](https://github.com/ShrimpFather7/Koster_Deep-Learning_Ecology/tree/main/chapter2 "Chapter 2 – Annotations to GBIF data") and comparing them to a GBIF occurrence download. Afterwards, occurrences can be intersected with temperature values from [Bio-ORACLE](https://doi.org/10.1111/geb.13813 "Bio-ORACLE v3.0 original publication") and filtered to estimate median temperature and temperature ranges of investigated taxa.
 
 ## **Citation**
 Please use the following citation for use of any data or code provided in this repository:
