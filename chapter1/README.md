@@ -11,7 +11,7 @@ Originally used for data processing in:
 
 ## **Contents**  
 - `Extract_depths.ipynb` – Script that crops, edits, and reads numbers from a series of images in a folder.  
-- `chp_1_example_data` – Folder containing a series of pre-cropped images with depth values and frame number in their file name. [See note 1](#note-1)
+- `chp_1_example_data.zip` – .zip-folder containing a series of pre-cropped images with depth values and frame number in their file name. [See note 1](#note-1)
 
 
 ## **Dependencies**
