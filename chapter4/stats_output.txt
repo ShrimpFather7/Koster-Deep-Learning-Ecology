@@ -1,0 +1,668 @@
+Example output data copied from console
+
+- TAXA
+
+$`Protanthea simplex`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.6879 -0.4330 -0.2676  0.0438 14.5879 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.010e-15  1.476e-02   0.000  1.00000    
+year         1.576e-01  1.522e-02  10.358  < 2e-16 ***
+depth       -1.102e+00  1.224e-01  -9.006  < 2e-16 ***
+sqrt_depth   1.236e+00  1.224e-01  10.102  < 2e-16 ***
+day          1.304e-01  7.194e-02   1.813  0.06990 .  
+daysq       -2.120e-01  7.236e-02  -2.930  0.00341 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.963 on 4251 degrees of freedom
+Multiple R-squared:  0.07379,	Adjusted R-squared:  0.0727 
+F-statistic: 67.73 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Sabella pavonina`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.1753 -0.4993 -0.2338  0.1339 12.0349 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -2.796e-16  1.440e-02   0.000   1.0000  
+year         2.960e-02  1.485e-02   1.994   0.0462 *
+depth        1.670e-01  1.194e-01   1.399   0.1620  
+sqrt_depth   1.732e-01  1.194e-01   1.450   0.1471  
+day          1.706e-01  7.019e-02   2.430   0.0151 *
+daysq       -1.655e-01  7.060e-02  -2.344   0.0191 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9395 on 4251 degrees of freedom
+Multiple R-squared:  0.1183,	Adjusted R-squared:  0.1173 
+F-statistic: 114.1 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Geodia barretti`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.5427 -0.2380 -0.0624  0.1240 16.0724 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.630e-14  1.373e-02   0.000 1.000000    
+year        -4.409e-01  1.416e-02 -31.139  < 2e-16 ***
+depth        9.374e-02  1.139e-01   0.823 0.410588    
+sqrt_depth   2.485e-02  1.139e-01   0.218 0.827310    
+day          1.889e-01  6.695e-02   2.821 0.004804 ** 
+daysq       -2.368e-01  6.734e-02  -3.517 0.000442 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8961 on 4251 degrees of freedom
+Multiple R-squared:  0.1979,	Adjusted R-squared:  0.197 
+F-statistic: 209.8 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Mycale lingua`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.3240 -0.2531 -0.2108 -0.1069 18.4342 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -9.225e-16  1.527e-02   0.000  1.00000   
+year        -1.751e-02  1.574e-02  -1.113  0.26592   
+depth       -3.012e-01  1.266e-01  -2.379  0.01742 * 
+sqrt_depth   3.792e-01  1.266e-01   2.995  0.00276 **
+day          1.539e-01  7.441e-02   2.068  0.03866 * 
+daysq       -1.514e-01  7.484e-02  -2.023  0.04312 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.996 on 4251 degrees of freedom
+Multiple R-squared:  0.009105,	Adjusted R-squared:  0.007939 
+F-statistic: 7.812 on 5 and 4251 DF,  p-value: 2.493e-07
+
+
+$`Polycarpa pomaria`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.3921 -0.3435 -0.0706  0.0852 12.7697 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  5.810e-16  1.417e-02   0.000 1.000000    
+year         2.041e-02  1.461e-02   1.397 0.162476    
+depth        1.775e+00  1.175e-01  15.102  < 2e-16 ***
+sqrt_depth  -1.453e+00  1.175e-01 -12.363  < 2e-16 ***
+day          2.369e-01  6.908e-02   3.429 0.000611 ***
+daysq       -2.381e-01  6.948e-02  -3.426 0.000617 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9247 on 4251 degrees of freedom
+Multiple R-squared:  0.1459,	Adjusted R-squared:  0.1449 
+F-statistic: 145.2 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$Serpulidae
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.7199 -0.4606 -0.1554  0.1377  8.4276 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.060e-14  1.390e-02   0.000 1.000000    
+year        -2.270e-01  1.433e-02 -15.841  < 2e-16 ***
+depth        7.559e-01  1.153e-01   6.558 6.12e-11 ***
+sqrt_depth  -3.973e-01  1.153e-01  -3.447 0.000572 ***
+day          1.093e-01  6.774e-02   1.613 0.106727    
+daysq       -1.296e-01  6.814e-02  -1.902 0.057268 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9068 on 4251 degrees of freedom
+Multiple R-squared:  0.1788,	Adjusted R-squared:  0.1778 
+F-statistic: 185.1 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$Molgula
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0992 -0.2997 -0.0478  0.0929 25.5389 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.769e-15  1.451e-02   0.000   1.0000    
+year         2.798e-02  1.496e-02   1.870   0.0616 .  
+depth        1.692e+00  1.204e-01  14.056   <2e-16 ***
+sqrt_depth  -1.441e+00  1.204e-01 -11.974   <2e-16 ***
+day          1.102e-01  7.075e-02   1.557   0.1195    
+daysq       -1.477e-01  7.116e-02  -2.075   0.0380 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.947 on 4251 degrees of freedom
+Multiple R-squared:  0.1042,	Adjusted R-squared:  0.1032 
+F-statistic: 98.91 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$Ascidia
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5042 -0.3753 -0.2851 -0.0561 16.7808 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -8.412e-16  1.517e-02   0.000  1.00000    
+year         4.256e-02  1.564e-02   2.721  0.00654 ** 
+depth       -6.836e-01  1.259e-01  -5.432 5.90e-08 ***
+sqrt_depth   7.738e-01  1.258e-01   6.149 8.52e-10 ***
+day          1.505e-01  7.397e-02   2.034  0.04198 *  
+daysq       -9.706e-02  7.439e-02  -1.305  0.19209    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9901 on 4251 degrees of freedom
+Multiple R-squared:  0.02094,	Adjusted R-squared:  0.01979 
+F-statistic: 18.19 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Ciona intestinalis`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5868 -0.3962 -0.2638 -0.0468 10.4461 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -3.165e-15  1.493e-02   0.000  1.00000    
+year         1.160e-01  1.539e-02   7.534 5.98e-14 ***
+depth       -1.351e+00  1.238e-01 -10.911  < 2e-16 ***
+sqrt_depth   1.432e+00  1.238e-01  11.568  < 2e-16 ***
+day          1.707e-01  7.277e-02   2.346  0.01904 *  
+daysq       -2.134e-01  7.319e-02  -2.915  0.00358 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9741 on 4251 degrees of freedom
+Multiple R-squared:  0.05229,	Adjusted R-squared:  0.05118 
+F-statistic: 46.91 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Porania pulvillus`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.3761 -0.2043 -0.1679 -0.1137 17.8237 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -8.290e-14  1.528e-02   0.000 1.000000    
+year        -5.692e-02  1.575e-02  -3.613 0.000306 ***
+depth       -2.759e-01  1.267e-01  -2.177 0.029525 *  
+sqrt_depth   3.133e-01  1.267e-01   2.472 0.013470 *  
+day          1.246e-01  7.449e-02   1.673 0.094354 .  
+daysq       -1.052e-01  7.492e-02  -1.404 0.160446    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.997 on 4251 degrees of freedom
+Multiple R-squared:  0.007147,	Adjusted R-squared:  0.00598 
+F-statistic:  6.12 on 5 and 4251 DF,  p-value: 1.174e-05
+
+
+$`Acesta excavata`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2001 -0.3317 -0.1012  0.0821 20.9910 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  5.004e-15  1.464e-02   0.000    1.000    
+year        -9.187e-02  1.509e-02  -6.087 1.25e-09 ***
+depth        1.368e+00  1.214e-01  11.264  < 2e-16 ***
+sqrt_depth  -1.122e+00  1.214e-01  -9.245  < 2e-16 ***
+day         -2.315e-02  7.135e-02  -0.324    0.746    
+daysq        9.593e-03  7.176e-02   0.134    0.894    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.955 on 4251 degrees of freedom
+Multiple R-squared:  0.08896,	Adjusted R-squared:  0.08789 
+F-statistic: 83.02 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$Actiniidae
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2009 -0.3716 -0.1068  0.0406  9.6735 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.377e-15  1.439e-02   0.000  1.00000    
+year         3.099e-02  1.484e-02   2.088  0.03683 *  
+depth        1.298e+00  1.194e-01  10.878  < 2e-16 ***
+sqrt_depth  -9.873e-01  1.193e-01  -8.272  < 2e-16 ***
+day          2.021e-01  7.015e-02   2.881  0.00398 ** 
+daysq       -1.855e-01  7.056e-02  -2.629  0.00859 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.939 on 4251 degrees of freedom
+Multiple R-squared:  0.1194,	Adjusted R-squared:  0.1183 
+F-statistic: 115.2 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$Munida
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9936 -0.3019 -0.0652  0.0612 19.0857 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.695e-15  1.472e-02   0.000    1.000    
+year         6.690e-02  1.517e-02   4.409 1.06e-05 ***
+depth        1.451e+00  1.221e-01  11.887  < 2e-16 ***
+sqrt_depth  -1.234e+00  1.220e-01 -10.114  < 2e-16 ***
+day          2.116e-02  7.174e-02   0.295    0.768    
+daysq       -1.003e-02  7.215e-02  -0.139    0.889    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9602 on 4251 degrees of freedom
+Multiple R-squared:  0.07908,	Adjusted R-squared:  0.078 
+F-statistic: 73.01 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Phakellia ventilabrum`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0121 -0.3273 -0.1015  0.0285 12.2616 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.102e-16  1.478e-02   0.000   1.0000    
+year         4.745e-03  1.523e-02   0.311   0.7555    
+depth        1.254e+00  1.225e-01  10.237   <2e-16 ***
+sqrt_depth  -1.028e+00  1.225e-01  -8.388   <2e-16 ***
+day          1.297e-01  7.202e-02   1.801   0.0718 .  
+daysq       -1.404e-01  7.244e-02  -1.939   0.0526 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.964 on 4251 degrees of freedom
+Multiple R-squared:  0.07178,	Adjusted R-squared:  0.07069 
+F-statistic: 65.74 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Lithodes maja`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.3342 -0.1442 -0.0854 -0.0291 30.2904 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  8.787e-16  1.529e-02   0.000  1.00000   
+year        -5.047e-02  1.577e-02  -3.201  0.00138 **
+depth        1.226e-01  1.268e-01   0.967  0.33371   
+sqrt_depth  -6.640e-02  1.268e-01  -0.524  0.60060   
+day          5.669e-02  7.454e-02   0.760  0.44703   
+daysq       -6.504e-02  7.498e-02  -0.867  0.38572   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9978 on 4251 degrees of freedom
+Multiple R-squared:  0.005609,	Adjusted R-squared:  0.004439 
+F-statistic: 4.796 on 5 and 4251 DF,  p-value: 0.000225
+
+
+$`Caryophyllia smithii`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5845 -0.3451 -0.1620  0.0542 12.8845 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.603e-16  1.487e-02   0.000    1.000    
+year         8.515e-02  1.533e-02   5.554 2.96e-08 ***
+depth       -8.112e-01  1.233e-01  -6.578 5.33e-11 ***
+sqrt_depth   5.977e-01  1.233e-01   4.848 1.29e-06 ***
+day          9.230e-02  7.248e-02   1.274    0.203    
+daysq       -1.084e-01  7.290e-02  -1.487    0.137    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9701 on 4251 degrees of freedom
+Multiple R-squared:   0.06,	Adjusted R-squared:  0.05889 
+F-statistic: 54.27 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+$`Alcyonium digitatum`
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = taxonframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5095 -0.1586  0.0107  0.1004 15.9172 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -2.279e-15  1.340e-02   0.000  1.00000    
+year         3.986e-02  1.381e-02   2.886  0.00392 ** 
+depth        2.556e+00  1.111e-01  23.003  < 2e-16 ***
+sqrt_depth  -2.909e+00  1.111e-01 -26.180  < 2e-16 ***
+day         -9.179e-02  6.531e-02  -1.406  0.15994    
+daysq        1.276e-01  6.568e-02   1.942  0.05216 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8741 on 4251 degrees of freedom
+Multiple R-squared:  0.2368,	Adjusted R-squared:  0.2359 
+F-statistic: 263.8 on 5 and 4251 DF,  p-value: < 2.2e-16
+
+
+
+- Traits
+
+$Medium
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.364 -0.255 -0.169 -0.046 34.070 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -8.174e-15  6.207e-03   0.000 1.000000    
+year         5.371e-02  6.399e-03   8.394  < 2e-16 ***
+depth       -2.331e-01  5.147e-02  -4.529 5.97e-06 ***
+sqrt_depth   3.337e-01  5.147e-02   6.484 9.10e-11 ***
+day          7.669e-02  3.025e-02   2.535 0.011254 *  
+daysq       -1.063e-01  3.043e-02  -3.494 0.000477 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.992 on 25536 degrees of freedom
+Multiple R-squared:  0.01618,	Adjusted R-squared:  0.01598 
+F-statistic: 83.97 on 5 and 25536 DF,  p-value: < 2.2e-16
+
+
+$High
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.3208 -0.2708 -0.2365 -0.1112 21.0603 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.162e-15  5.780e-03   0.000 1.000000    
+year         5.789e-02  5.958e-03   9.716  < 2e-16 ***
+depth       -4.317e-02  4.793e-02  -0.901 0.367832    
+sqrt_depth   5.867e-02  4.793e-02   1.224 0.220928    
+day          9.443e-02  2.817e-02   3.352 0.000803 ***
+daysq       -1.038e-01  2.833e-02  -3.662 0.000251 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9977 on 29793 degrees of freedom
+Multiple R-squared:  0.004688,	Adjusted R-squared:  0.004521 
+F-statistic: 28.07 on 5 and 29793 DF,  p-value: < 2.2e-16
+
+
+$Low
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9062 -0.2182 -0.0932  0.0372 30.1558 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -3.289e-15  7.449e-03   0.000 1.000000    
+year        -2.161e-01  7.679e-03 -28.145  < 2e-16 ***
+depth        2.456e-01  6.177e-02   3.976 7.05e-05 ***
+sqrt_depth  -1.378e-01  6.177e-02  -2.232 0.025656 *  
+day          1.022e-01  3.631e-02   2.816 0.004869 ** 
+daysq       -1.259e-01  3.652e-02  -3.448 0.000566 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.972 on 17022 degrees of freedom
+Multiple R-squared:  0.05552,	Adjusted R-squared:  0.05524 
+F-statistic: 200.1 on 5 and 17022 DF,  p-value: < 2.2e-16
+
+
+$Small
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.349 -0.263 -0.186 -0.049 38.528 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.708e-15  5.072e-03   0.000 1.000000    
+year         6.105e-02  5.229e-03  11.675  < 2e-16 ***
+depth       -4.347e-01  4.206e-02 -10.333  < 2e-16 ***
+sqrt_depth   5.088e-01  4.206e-02  12.097  < 2e-16 ***
+day          8.574e-02  2.472e-02   3.468 0.000525 ***
+daysq       -1.153e-01  2.487e-02  -4.636 3.56e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9928 on 38307 degrees of freedom
+Multiple R-squared:  0.0144,	Adjusted R-squared:  0.01427 
+F-statistic: 111.9 on 5 and 38307 DF,  p-value: < 2.2e-16
+
+
+$Large
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7183 -0.2042 -0.1044 -0.0509 25.6294 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.054e-15  5.384e-03   0.000 1.000000    
+year        -1.833e-02  5.551e-03  -3.303 0.000958 ***
+depth        8.730e-01  4.465e-02  19.551  < 2e-16 ***
+sqrt_depth  -8.275e-01  4.465e-02 -18.534  < 2e-16 ***
+day          6.008e-02  2.624e-02   2.289 0.022061 *  
+daysq       -5.258e-02  2.639e-02  -1.992 0.046369 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9936 on 34050 degrees of freedom
+Multiple R-squared:  0.01284,	Adjusted R-squared:  0.01269 
+F-statistic: 88.58 on 5 and 34050 DF,  p-value: < 2.2e-16
+
+
+$SSF
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-0.321 -0.238 -0.173 -0.075 45.981 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.880e-14  4.080e-03   0.000        1    
+year         4.277e-02  4.206e-03  10.167  < 2e-16 ***
+depth       -1.433e-01  3.384e-02  -4.234 2.30e-05 ***
+sqrt_depth   2.093e-01  3.383e-02   6.187 6.18e-10 ***
+day          7.837e-02  1.989e-02   3.941 8.12e-05 ***
+daysq       -9.940e-02  2.000e-02  -4.970 6.72e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9961 on 59592 degrees of freedom
+Multiple R-squared:  0.007952,	Adjusted R-squared:  0.007869 
+F-statistic: 95.54 on 5 and 59592 DF,  p-value: < 2.2e-16
+
+
+$MS
+
+Call:
+lm(formula = abundance ~ year + depth + sqrt_depth + day + daysq, 
+    data = traitframe)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4622 -0.2229 -0.1160 -0.0410 21.6560 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.487e-14  8.794e-03   0.000    1.000    
+year        -1.103e-02  9.066e-03  -1.216    0.224    
+depth        4.217e-01  7.293e-02   5.782 7.54e-09 ***
+sqrt_depth  -3.188e-01  7.292e-02  -4.371 1.24e-05 ***
+day          7.003e-02  4.286e-02   1.634    0.102    
+daysq       -6.032e-02  4.311e-02  -1.399    0.162    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9938 on 12765 degrees of freedom
+Multiple R-squared:  0.01284,	Adjusted R-squared:  0.01245 
+F-statistic:  33.2 on 5 and 12765 DF,  p-value: < 2.2e-16
+
+
+
+ - Median temp vs. taxon-specific abundance trends regression
+
+lm(formula = scale(coefficients) ~ scale(median_temp), data = traits)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.87330 -0.16759 -0.01166  0.50992  1.04671 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        2.406e-16  2.044e-01   0.000   1.0000  
+scale(median_temp) 5.780e-01  2.107e-01   2.743   0.0151 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8428 on 15 degrees of freedom
+Multiple R-squared:  0.334,	Adjusted R-squared:  0.2896 
+F-statistic: 7.523 on 1 and 15 DF,  p-value: 0.0151
+
+
+- Wilcox test size
+
+Wilcoxon rank sum exact test
+
+data:  coefficients by size
+W = 13, p-value = 0.0274
+alternative hypothesis: true location shift is not equal to 0
+
+
+- Wilcox test lifestyle
+
+	Wilcoxon rank sum exact test
+
+data:  coefficients by lifestyle
+W = 17, p-value = 0.6765
+alternative hypothesis: true location shift is not equal to 0
