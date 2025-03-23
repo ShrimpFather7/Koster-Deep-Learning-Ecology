@@ -14,10 +14,14 @@ This script was originally used for data processing in:
 
 ## **Contents**  
 - `Depth_comparison_and_temp_assignments.R` – R-script that extracts depth ranges from investigated taxa in the original dataset and a GBIF occurrence download, and assigns investigated taxa with a median temperature based on Bio-ORACLE data and GBIF occurrence data.
+
 - `koster_historical_biodiversity_assessment_occurrence.txt` – Tab-separated .txt file with Darwin Core formatted abundance data sorted by taxon and depth, utilized in data analyses by Nilsson et al. (2025).
-- `chp_3_GBIF_Swedata.csv` – The same .csv-file with [GBIF occurrences](https://doi.org/10.15468/dl.rcne77 "GBIF Occurrence download (Sweden)") utilized by Nilsson et al. (2025) for comparison of their modeled results with depth distributions of the same species they investigated throughout Sweden. [See note 1](#note-1) 
+
+- `chp_3_GBIF_Swedata.csv` – The same .csv-file with [GBIF occurrences](https://doi.org/10.15468/dl.rcne77 "GBIF Occurrence download (Sweden)") utilized by Nilsson et al. (2025) for comparison of their modeled results with depth distributions of the same species they investigated throughout Sweden. [See note 1](#note-1)
+
 - `chp_3_GBIF_Globaldata.csv` – The same .csv-file with [GBIF occurrences](https://doi.org/10.15468/dl.azec6t "GBIF Occurrence download (Global)") utilized by Nilsson et al. (2025) for intersection of temperatures to worldwide occurrences between the years 2000-2019 of the same species they investigated. [See note 1](#note-1)
-- `chp_3_publication_temp_occurrences.csv` – The .csv-file utilized by Nilsson et al. (2025) with GBIF occurrences intersected with Bio-ORACLE temperature values, filtered according to criteria in `Depth_comparison_and_temp_assignments.R`.[See note 2](#note-2)
+
+- `chp_3_publication_temp_occurrences.csv` – The filtered .csv-file utilized by Nilsson et al. (2025) with GBIF occurrences intersected with Bio-ORACLE temperature values. [See note 2](#note-2)
 
 ## **Dependencies**
 - dplyr
@@ -34,11 +38,12 @@ This script was originally used for data processing in:
     - Do both of the above :)
 
 ## **Output**
-- `my_depth_ranges.csv` – Depth ranges of investigated taxa from data formatted as [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment").
+- `my_depth_ranges.csv` – Depth ranges of investigated taxa from data formatted like [Koster Historical Biodiversity Assessment](https://doi.org/10.15468/rzhmef "GBIF – Koster Historical Biodiversity Assessment"), i.e. from chapter 2 output `test_gbif.csv`.
+
 - `gbif_depth_ranges.csv` – Depth ranges of investigated taxa from a GBIF occurrence download.
 - `intersected_temps.csv` – GBIF occurrences intersected with temperature values from Bio-ORACLE.
-- `filtered_temps.csv` – Filtered occurrences intersected with temperature (equivalent to `chp_3_publication_temp_occurrences.csv`)
-- `central_ranges.csv` – Central 68% of temperature values and median temperatures assigned to all investigated taxa (from `filtered_temps.csv`).
+- `filtered_temps.csv` – Filtered occurrences intersected with temperature.
+- `central_ranges.csv` – Central 68% of temperature values and median temperatures assigned to all investigated taxa.
 
 ## **Contact**
 Questions, bugs, and suggestions can be submitted via email to christian.nilsson7@outlook.com.
@@ -48,7 +53,7 @@ Questions, bugs, and suggestions can be submitted via email to christian.nilsson
 
 ## **Notes**
 ### <a id="note-1"></a>Note 1
-Some taxa investigated by Nilsson et al. (2025) may have consisted of several species. Therefore, species of these taxa that have been suggested by the Swedish biodiversity portal [Artdatabanken](https://artfakta.se/"Artfakta, the facts part about species") to reside at the study site of Nilsson et al. (2025) have been included in the occurrence downloads.
+Some taxa investigated by Nilsson et al. (2025) may have consisted of several species. Therefore, species of these taxa that have been suggested by the Swedish biodiversity portal [Artdatabanken](https://artfakta.se/ "Artfakta – the facts part about species") to reside at the study site of Nilsson et al. (2025) have been included in the occurrence downloads.
 
 ### <a id="note-2"></a>Note 2
 As one filtering step is random, output may not be identical to `chp_3_publication_temp_occurrences.csv`. Therefore, this file has been included for reproducibility purposes.
