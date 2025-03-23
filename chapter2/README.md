@@ -22,7 +22,7 @@ Originally used for data processing in:
 - ggplot2
 
 ## **How to Use**  
-1. Load the script into R.
+1. Load the script into RStudio.
 2. Follow instructions until the desired level of data is achieved, i.e:
     - Expanded raw data containing the number of annotations (including absences) of each class per frame).
     - Summarized data of max/mean number of annotations of each class per depth unit, using Darwin Core terminology formatted for GBIF publication.
