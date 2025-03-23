@@ -10,7 +10,7 @@ Originally used for data processing in:
 - Nilsson et al. 2025
 
 ## **Contents**  
-- `Extract_depths.ipynb` – Crops, edits, and reads numbers from a series of images in a folder.  
+- `Extract_depths.ipynb` – Script that crops, edits, and reads numbers from a series of images in a folder.  
 - `chp_1_example_data` – Folder containing a series of pre-cropped images with depth values and frame number in their file name. [See note 1](#note-1)
 
 
@@ -31,6 +31,9 @@ Originally used for data processing in:
 
 ## **Output**
 - `chp_2_depth_df.csv` – A .csv-file including the depth read, frame number, and name of the file which the frame was taken from.
+
+## **Contact**
+Questions, bugs, and suggestions can be submitted via email to christian.nilsson7@outlook.com.
 
 ## **License**
 - All scripts and data are available under the [MIT license](https://mit-license.org/), please cite any use or derivatives of this work.
