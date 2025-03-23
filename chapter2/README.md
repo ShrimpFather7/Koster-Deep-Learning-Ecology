@@ -11,7 +11,7 @@ Originally used for data processing in:
 
 ## **Contents**  
 - `Annotations_to_GBIF.R` – R-script that assigns depth values to annotations, collects annotation stats per depth, and formats data for GBIF publication.
-- `chp_2_annotations_transect_1.zip` .zip file containing example raw annotations data from YOLOv8 application to footage using SUBSIM.
+- `chp_2_annotations_transect_1.zip` .zip file containing example raw annotations data from YOLOv8 application to footage using SUBSIM. Annotations made by the [YOLOv8 model](https://doi.org/10.5281/zenodo.13589902 "Koster historical invertebrate model - SUBSIM 17tx") trained for Nilsson et al. (2025)
 - `chp_2_depth_df.csv` – A .csv-file including the depth values, corresponding frame numbers, and name of the files from which each frame was taken. [See note 1](#note-1)
 
 
