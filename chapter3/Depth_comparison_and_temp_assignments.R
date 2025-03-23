@@ -65,7 +65,7 @@ my_depth_ranges <- extract_my_depth_info(my_data)
 my_depth_ranges
 
 # Write it!
-write.csv(my_depth_ranges, "Path/to/where/I/want/it.csv", row.names = FALSE, quote = FALSE)
+write.csv(my_depth_ranges, "Path/to/where/I/want/my_depth_ranges.csv", row.names = FALSE, quote = FALSE)
 
 
 # Load the GBIF data.
@@ -153,7 +153,7 @@ gbif_depth_ranges <- extract_gbif_depth_info(swebif_data)
 gbif_depth_ranges
 
 # Write it!
-write.csv(gbif_depth_ranges, "Path/to/where/I/want/it.csv", row.names = FALSE, quote = FALSE)
+write.csv(gbif_depth_ranges, "Path/to/where/I/want/gbif_depth_ranges.csv", row.names = FALSE, quote = FALSE)
 
 
 
@@ -372,7 +372,7 @@ temperatures_2010 <- terra::extract(temp_raster_2010, gbif_data_2010[, c("decima
 result_2010 <- cbind(gbif_data_2010, seafloor_temperature = temperatures_2010$last)
 
 #Combine both dfs and remove NA temperatures
-combined_results <- rbind(result_2000[which(!is.na(result_2000$seafloor_temperature)),],result_2010[which(!is.na(result_2010$seafloor_temperature)),])
+intersected_temps <- rbind(result_2000[which(!is.na(result_2000$seafloor_temperature)),],result_2010[which(!is.na(result_2010$seafloor_temperature)),])
 
 
 # CHECKPOINT. You have now added temperature values to all GBIF occurrences that lie on 
@@ -380,7 +380,7 @@ combined_results <- rbind(result_2000[which(!is.na(result_2000$seafloor_temperat
 # the previously set threshold. Export these results and continue with post-processing 
 # below.
 
-write.table(combined_results, "Path/to/where/you/want/your/result.csv", row.names = FALSE, quote = FALSE, sep = "\t")
+write.table(combined_results, "Path/to/where/you/want/your/intersected_temps.csv", row.names = FALSE, quote = FALSE, sep = "\t")
 
 
 
@@ -524,7 +524,7 @@ for (dude in unique(result_cleaned$taxon)) {
 # reduced sampling bias by setting a maximum/minimum permitted distance between occurrences.
 
 # Export this result.
-write.table(result_cleaned, "Path/to/where/you/want/the/filtered_result.csv", row.names = FALSE, quote = FALSE, sep = "\t")
+write.table(result_cleaned, "Path/to/where/you/want/filtered_temps.csv", row.names = FALSE, quote = FALSE, sep = "\t")
 
 
 # OPTIONAL - This is where you can load the extracted occurrences with temperatures used
@@ -537,7 +537,7 @@ write.table(result_cleaned, "Path/to/where/you/want/the/filtered_result.csv", ro
 
 # Find median as well as upper/lower limit of central 68% of temperatures for each taxon.
 # Here you can swap 'result cleaned' for 'table_s3'
-central_range <- result_cleaned %>%
+central_ranges <- result_cleaned %>%
   group_by(taxon) %>%
   summarise(
     lower_16th = quantile(seafloor_temperature, probs = 0.16, na.rm = TRUE),
@@ -556,4 +556,4 @@ central_range <- result_cleaned %>%
 
 
 # Export the output
-write.csv(central_range, "Path/to/where/you/want/central_ranges.csv", row.names = FALSE, quote = FALSE)
+write.csv(central_ranges, "Path/to/where/you/want/central_ranges.csv", row.names = FALSE, quote = FALSE)
