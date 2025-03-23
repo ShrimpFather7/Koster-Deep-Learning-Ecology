@@ -10,7 +10,7 @@ Originally used for data processing in:
 - Nilsson et al. 2025
 
 ## **Contents**  
-- `Extract_depths.ipynb` – Script that crops, edits, and reads numbers from a series of images in a folder.  
+- `Extract_depths.ipynb` – Jupyter-Notebook that crops, edits, and reads numbers from a series of images in a folder.  
 - `chp_1_example_data.zip` – .zip-folder containing a series of pre-cropped images with depth values and frame number in their file name. [See note 1](#note-1)
 
 
