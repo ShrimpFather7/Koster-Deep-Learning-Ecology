@@ -2,11 +2,11 @@
 
 ## Koster-Deep-Learning-Ecology
 
-This is the official GitHub repository for the scientific publication [MY PAPER](link.com "MY PAPER"), detailing the data, processing workflows, and statistical analyses utilized to generate results shown in this article. While the primary objective of this repository is to enhance the reproducibility of the study, code here can be highly useful in analyses of data from the Swedish platform for subsea image analysis ([SUBSIM](https://subsim.se/)) and may also be used for unrelated purposes as well.
+This is the official GitHub repository for the scientific publication by Nilsson et al. (soon to be realeased as a preprint), detailing the data, processing workflows, and statistical analyses utilized to generate results shown in this article. While the primary objective of this repository is to enhance the reproducibility of the study, code here can be highly useful in analyses of data from the Swedish platform for subsea image analysis ([SUBSIM](https://subsim.se/)) and may also be used for unrelated purposes as well.
 
 ## Description
 
-MY PAPER trained a [YOLOv8 object-detection model](https://doi.org/10.5281/zenodo.13589902) to annotate prominent benthic invertebrate fauna from ROV footage spanning across 26 years (1997-2023) along a depth gradient in Kosterhavets national park (situated in the northernmost part of Sweden's west coast). 
+Nilsson et al. trained a [YOLOv8 object-detection model](https://doi.org/10.5281/zenodo.13589902) to annotate prominent benthic invertebrate fauna from ROV footage spanning across 26 years (1997-2023) along a depth gradient in Kosterhavets national park (situated in the northernmost part of Sweden's west coast). 
 
 Analysis of the [data](https://doi.org/10.15468/rzhmef) produced by the object-detection model highlighted changes in community structure along the depth gradient as well as significant temporal trends in community structure and ecosystem function. Temporal trends in community structure were primarily driven by size and temperature preference of the investigated taxa, with large, cold-loving taxa declining. However, the area's designation as a national park appears to benefit the remaining community.
 
@@ -65,7 +65,7 @@ For more information on chapter-specific dependencies, check chapter READMEs.
 ## Citation
 
 Please use the following citation for use of any data or code provided in this repository:
-- Zenodo blablabla Nilsson 2025
+- Zenodo link
 
 Associated article citation:
 - Nilsson CL, Faurby S, Burman E, Germishuys J, Obst M. (2025). Title. Journal blabla
