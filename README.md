@@ -1,4 +1,4 @@
-# MY PAPER GitHub repository
+# Nilsson et al. (2025) — GitHub repository
 
 ## Koster-Deep-Learning-Ecology
 
@@ -65,16 +65,16 @@ For more information on chapter-specific dependencies, check chapter READMEs.
 ## Citation
 
 Please use the following citation for use of any data or code provided in this repository:
-- Zenodo link
+- Christian Nilsson. (2025). ShrimpFather7/Koster-Deep-Learning-Ecology: v1.0 (biodiversity). Zenodo. [https://doi.org/10.5281/zenodo.15249144](https://doi.org/10.5281/zenodo.15249144)
 
 Associated article citation:
-- Nilsson CL, Faurby S, Burman E, Germishuys J, Obst M. (2025). Title. Journal blabla
+- To be announced
 
 Associated dataset citation:
-- Nilsson CL, Anton V, Burman E, Germishuys J, Obst M. (2025). Koster historical biodiversity assessment. Version 1.7. Wildlife.ai. Occurrence dataset. https://ipt.gbif.org.nz/resource?r=koster_historical_assessment&v=1.7 https://doi.org/10.15468/rzhmef.
+- Nilsson CL, Anton V, Burman E, Germishuys J, Obst M. (2025). Koster historical biodiversity assessment. Version 1.7. Wildlife.ai. Occurrence dataset. https://ipt.gbif.org.nz/resource?r=koster_historical_assessment&v=1.8 [https://doi.org/10.15468/rzhmef](https://doi.org/10.15468/rzhmef).
 
 Associated YOLOv8 model citation:
-- Nilsson, CL, Germishuys, J, Burman, E, Anton, V, White, J, Obst, M (2024). Koster historical invertebrate model - SUBSIM 17tx. Zenodo. https://doi.org/10.5281/zenodo.13589902
+- Nilsson, CL, Germishuys, J, Burman, E, Anton, V, White, J, Obst, M (2024). Koster historical invertebrate model - SUBSIM 17tx. Zenodo. [https://doi.org/10.5281/zenodo.13589902](https://doi.org/10.5281/zenodo.13589902)
 
   
 
