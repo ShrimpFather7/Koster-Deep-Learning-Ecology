@@ -65,7 +65,7 @@ For more information on chapter-specific dependencies, check chapter READMEs.
 ## Citation
 
 Please use the following citation for use of any data or code provided in this repository:
-- Christian Nilsson. (2025). ShrimpFather7/Koster-Deep-Learning-Ecology: v1.0 (biodiversity). Zenodo. [https://doi.org/10.5281/zenodo.15249144](https://doi.org/10.5281/zenodo.15249144)
+- Christian Nilsson. (2025). ShrimpFather7/Koster-Deep-Learning-Ecology. Zenodo. [https://doi.org/10.5281/zenodo.15249144](https://doi.org/10.5281/zenodo.15249144)
 
 Associated article citation:
 - Nilsson CL, Faurby S, Burman E, Germishuys J, Obst M. Applying deep learning to quantify drivers of long-term ecological change in a Swedish marine protected area. Authorea. April 21, 2025. [https://doi.org/10.22541/au.174522631.15993508/v1](https://doi.org/10.22541/au.174522631.15993508/v1)
