@@ -1,8 +1,8 @@
-# Nilsson et al. (2025) — GitHub repository
+# Applying deep learning to quantify drivers of long-term ecological change in a Swedish marine protected area — GitHub repository
 
 ## Koster-Deep-Learning-Ecology
 
-This is the official GitHub repository for the scientific publication by Nilsson et al. (soon to be realeased as a preprint), detailing the data, processing workflows, and statistical analyses utilized to generate results shown in this article. While the primary objective of this repository is to enhance the reproducibility of the study, code here can be highly useful in analyses of data from the Swedish platform for subsea image analysis ([SUBSIM](https://subsim.se/)) and may also be used for unrelated purposes as well.
+This is the official GitHub repository for the scientific publication, "Applying deep learning to quantify drivers of long-term ecological change in a Swedish marine protected area" by Nilsson et al., currently available as a preprint. This repository details the data, processing workflows, and statistical analyses utilized to generate results shown in this article. While the primary objective of this repository is to enhance the reproducibility of the study, code here can be highly useful in analyses of data from the Swedish platform for subsea image analysis ([SUBSIM](https://subsim.se/)) and may also be used for unrelated purposes as well.
 
 ## Description
 
@@ -68,7 +68,7 @@ Please use the following citation for use of any data or code provided in this r
 - Christian Nilsson. (2025). ShrimpFather7/Koster-Deep-Learning-Ecology: v1.0 (biodiversity). Zenodo. [https://doi.org/10.5281/zenodo.15249144](https://doi.org/10.5281/zenodo.15249144)
 
 Associated article citation:
-- To be announced
+- Nilsson CL, Faurby S, Burman E, Germishuys J, Obst M. Applying deep learning to quantify drivers of long-term ecological change in a Swedish marine protected area. Authorea. April 21, 2025. [https://doi.org/10.22541/au.174522631.15993508/v1](https://doi.org/10.22541/au.174522631.15993508/v1)
 
 Associated dataset citation:
 - Nilsson CL, Anton V, Burman E, Germishuys J, Obst M. (2025). Koster historical biodiversity assessment. Version 1.7. Wildlife.ai. Occurrence dataset. https://ipt.gbif.org.nz/resource?r=koster_historical_assessment&v=1.8 [https://doi.org/10.15468/rzhmef](https://doi.org/10.15468/rzhmef).
